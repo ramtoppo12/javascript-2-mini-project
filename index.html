@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Click Background Color Changing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <button onclick="color_changer()">OnClick background Changer</button>
+</body>
+<script>
+    function color_changer(){
+        var colors = new Array("#2f2f36","#6fd8a8","#2e6ae4","#bf7652","#ff95f5","#ff95f5","#46c7a7","#2362e2","#fd7e85","#1eafea","#22c7ea");
+        document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+    }
+</script>
+</html>
